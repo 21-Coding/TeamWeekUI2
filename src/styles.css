@@ -48,7 +48,7 @@ textarea {
 
 #talkbubble {
       height: 500px;
-      width: 500px;
+      width: 300px;
 
       background: dodgerblue;
       position: relative;
@@ -56,7 +56,7 @@ textarea {
       -webkit-border-radius: 10px;
       border-radius: 10px;
       float: right;
-      margin-right: 500px;
+      margin-right: 300px;
     }
     #talkbubble:before {
       content: "";

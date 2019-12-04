@@ -10,7 +10,7 @@
 
     <div class="container">
       <h1><span class="red">Dev</span><span class="yellow">Shortcuts</span></h1>
-      <div id="editor">
+      <div class="rounded" id="editor">
         <p>function foo(items) {
           var x = "All this is syntax highlighted";
           return x;
@@ -18,9 +18,9 @@
       </div>
 
       <form>
-        <div class="">
+        <div>
 
-          <textarea placeholder="Text entry here..."id="entry" rows="3"></textarea>
+          <textarea class="rounded" placeholder="Text entry here..."id="entry" rows="3"></textarea>
         </div>
       </form>
 <!-- added for questions -->
@@ -50,7 +50,23 @@
       <div class="card">
 
 
-        <button type="button" class="collapsible">Atom</button>
+
+
+        <!-- Default dropleft button -->
+        <div class="btn-group dropleft">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropleft
+          </button>
+          <div class="dropdown-menu">
+            <button class="dropdown-item" type="button">Action</button>
+            <button class="dropdown-item" type="button">Another action</button>
+            <button class="dropdown-item" type="button">Something else here</button>
+          </div>
+        </div>
+
+
+
+        <!-- <button type="button" class="btn btn-secondary" data container>Atom</button>
         <div class="content">
           <label for="Atom">Shortcuts
             <select class="form-control">
@@ -61,7 +77,7 @@
               <option value="8">Shake selected | Alt + Ctrl + ^ </option>
             </select>
           </label>
-        </div>
+        </div> -->
 
       </div>
 
