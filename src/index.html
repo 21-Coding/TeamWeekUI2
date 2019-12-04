@@ -17,12 +17,7 @@
         }</p>
       </div>
 
-      <form>
-        <div>
-
-          <textarea class="rounded" placeholder="Text entry here..."id="entry" rows="3"></textarea>
-        </div>
-      </form>
+      
 <!-- added for questions -->
     <div id="game">
       <h1 id="countDown"></h1>
@@ -44,9 +39,8 @@
 
 
     <div id="talkbubble">
-      <form class="" action="index.html" method="post">
-        <button form="allCollapse"type="button" class="collapsible">Shortcuts</button>
-        <div class="content">
+
+
       <div class="card">
 
 
@@ -55,29 +49,25 @@
         <!-- Default dropleft button -->
         <div class="btn-group dropleft">
           <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropleft
+            Atom
           </button>
           <div class="dropdown-menu">
-            <button class="dropdown-item" type="button">Action</button>
-            <button class="dropdown-item" type="button">Another action</button>
-            <button class="dropdown-item" type="button">Something else here</button>
+
+              <li><button id="moveCurrent" type="button" name="button">Move current highlighted line up/down</button></li>
+              <li><button id="selectNext" type="button" name="button">Select next matching X</button></li>
+              <li><button id="selectAll" type="button" name="button">Select all matching</button></li>
+              <li><button id="shakeSelect" type="button" name="button">Shake selected</button></li>
           </div>
         </div>
+<!--
 
 
 
-        <!-- <button type="button" class="btn btn-secondary" data container>Atom</button>
-        <div class="content">
-          <label for="Atom">Shortcuts
-            <select class="form-control">
-              <option value="">Menu</option>
-              <option value="2">Move current highlighted line up/down | Ctrl + Alt + (up/dpwn)</option>
-              <option value="4">Select next matching X | Alt + D</option>
-              <option value="6">Select all matching | Alt + Ctrl + G</option>
-              <option value="8">Shake selected | Alt + Ctrl + ^ </option>
-            </select>
-          </label>
-        </div> -->
+ -->
+
+
+
+
 
       </div>
 
@@ -114,12 +104,22 @@
           </select>
         </label>
       </div>
-    </form>
+
 
 
     </div>
+
   </div>
-  </div>
+</div>
+<div class="hidden">
+  <span id="shortcut1">Ctrl + Alt + (up/dpwn)</span>
+  <span id="shortcut2">Alt + D</span>
+  <span id="shortcut3">Alt + Ctrl + G</span>
+  <span id="shortcut4">Alt + Ctrl + ^</span>
+
+</div>
+
+
 </div>
 </body>
 </html>
