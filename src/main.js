@@ -60,33 +60,43 @@ for (i = 0; i < coll.length; i++) {
 }
 
 $("#moveCurrent").click(function(event){
-   event.preventDefault();
-   $(".hidden").fadeIn();
-   $("#shortcut1").fadeIn();
+  event.preventDefault();
+  $(".noShow").hide();
+  $(".hidden").fadeIn();
+  $("#shortcut1").fadeIn();
+
+})
 
 
- })
-
- $("#selectNext").click(function(event){
-    event.preventDefault();
-    $(".hidden").fadeIn();
-     $("#shortcut2").fadeIn();
 
 
-  })
-
-  $("#selectAll").click(function(event){
-     event.preventDefault();
-     $(".hidden").fadeIn();
-      $("#shortcut3").fadeIn();
 
 
-   })
+$("#selectNext").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $(".hidden").fadeIn();
+  $("#shortcut2").fadeIn();
+})
 
-   $("#shakeSelect").click(function(event){
-      event.preventDefault();
-      $(".hidden").fadeIn();
-       $("#shortcut4").fadeIn();
 
 
-  })
+
+
+$("#selectAll").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $(".hidden").fadeIn();
+  $("#shortcut3").fadeIn();
+})
+
+
+
+
+
+$("#shakeSelect").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $(".hidden").fadeIn();
+  $("#shortcut4").fadeIn();
+})
