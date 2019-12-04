@@ -25,7 +25,7 @@ textarea {
   width: 500px;
 }
 
-#shortcut1, #shortcut2, #shortcut3, #shortcut4, #shortcut5, #shortcut6, #shortcut7, #shortcut8 {
+#shortcut1, #shortcut2, #shortcut3, #shortcut4, #shortcut5, #shortcut6, #shortcut7, #shortcut8, #shortcut9, #shortcut10, #shortcut11, #shortcut12 {
   display: none;
   font-family: 'Acme', sans-serif;
   font-size: 18px;
@@ -61,7 +61,7 @@ textarea {
 /* container with shortcuts being pushed from bottom of page; shaped like a banner */
 
 #pointer {
-      /* display: none; */
+      display: none;
       height: 40px;
       width: 200px;
       position: relative;

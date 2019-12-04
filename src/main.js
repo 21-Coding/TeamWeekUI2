@@ -128,3 +128,40 @@ $("#newWindow").click(function(event){
 })
 
 // end chrome buttons to pop up banner
+
+
+
+
+
+// general buttons to pop up banner
+$("#copy").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut9").fadeIn();
+
+})
+
+$("#paste").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut10").fadeIn();
+
+})
+
+$("#pasteWithout").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut11").fadeIn();
+})
+
+$("#select").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut12").fadeIn();
+})
+
+// end general buttons to pop up banner
