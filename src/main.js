@@ -59,44 +59,72 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+
+// atom buttons that link to pop up banner
 $("#moveCurrent").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
-  $(".hidden").fadeIn();
+  $("#pointer").fadeIn();
   $("#shortcut1").fadeIn();
 
 })
 
-
-
-
-
-
 $("#selectNext").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
-  $(".hidden").fadeIn();
+  $("#pointer").fadeIn();
   $("#shortcut2").fadeIn();
 })
-
-
-
-
 
 $("#selectAll").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
-  $(".hidden").fadeIn();
+  $("#pointer").fadeIn();
   $("#shortcut3").fadeIn();
 })
-
-
-
-
 
 $("#shakeSelect").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
-  $(".hidden").fadeIn();
+  $("#pointer").fadeIn();
   $("#shortcut4").fadeIn();
 })
+// end atom buttons to pop up banner
+
+
+
+
+
+
+// chrome buttons to pop up banner
+$("#clearConsole").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut5").fadeIn();
+
+})
+
+$("#openInspector").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut6").fadeIn();
+
+})
+
+$("#newTab").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut7").fadeIn();
+})
+
+$("#newWindow").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut8").fadeIn();
+})
+
+// end chrome buttons to pop up banner

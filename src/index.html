@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+
+  <<link href="https://fonts.googleapis.com/css?family=Acme|Pacifico&display=swap" rel="stylesheet">
   <title>ACE in Action</title>
 </head>
 <body>
@@ -9,7 +10,7 @@
   <div class="all">
 
     <div class="container">
-      <h1><span class="red">Dev</span><span class="yellow">Shortcuts</span></h1>
+      <h1 class="pacifico"><span class="red">Dev</span><span class="yellow">Shortcuts</span></h1>
       <div class="rounded" id="editor">
         <p>function foo(items) {
           var x = "All this is syntax highlighted";
@@ -46,9 +47,9 @@
 
 
 
-        <!-- Default dropleft button -->
+        <!-- atom dropleft button -->
         <div class="btn-group dropleft">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="pacifico" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Atom
           </button>
           <div class="dropdown-menu">
@@ -59,40 +60,39 @@
               <li><button id="shakeSelect" type="button" name="button">Shake selected</button></li>
           </div>
         </div>
-<!--
-
-
-
- -->
+        <!-- end atom dropleft -->
 
 
 
 
-
+        <!-- chrome dropleft button -->
       </div>
 
       <div class="card">
+        <div class="btn-group dropleft">
+          <button class="pacifico" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Chrome
+          </button>
+        <div class="dropdown-menu">
+          <li><button id="clearConsole" type="button" name="button">Clear Console Log</button></li>
+          <li><button id="openInspector" type="button" name="button">Open inspector</button></li>
+          <li><button id="newTab" type="button" name="button">New Tab</button></li>
+          <li><button id="newWindow" type="button" name="button">New Window</button></li>
+        </div>
+
+        <!-- end chrome dropleft -->
 
 
-      <button type="button" class="collapsible">Chrome</button>
-      <div class="content">
-        <label for="Atom">Chrome
-          <select class="form-control">
-            <option value="">Menu</option>
-            <option value="2">Clear Console Log | Alt + K</option>
-            <option value="4">Open inspector | Alt + Windows + C</option>
-            <option value="6">New Tab | Alt + T</option>
-            <option value="8">New Window | Alt + N</option>
-          </select>
-        </label>
+
+
       </div>
 
       </div>
 
-      <div class="card">
+      <!-- <div class="card">
 
 
-     <button type="button" class="collapsible">Atom</button>
+     <button type="button" class="collapsible pacifico">Atom</button>
      <div class="content">
         <label for="Atom">General
           <select class="form-control" name="">
@@ -107,16 +107,28 @@
 
 
 
-    </div>
+    </div> -->
 
   </div>
 </div>
-<div class="hidden">
+<div id="pointer">
 
+
+<!-- atom shortcuts -->
   <span class="noShow" id="shortcut1">Ctrl + Alt + (up/dpwn)</span>
   <span class="noShow" id="shortcut2">Alt + D</span>
   <span class="noShow" id="shortcut3">Alt + Ctrl + G</span>
-  <span class="noShow" id="shortcut4">Alt + Ctrl + ^</span>
+  <span class="noShow" id="shortcut4">Alt + Ctrl + (up)</span>
+<!-- end atom shortcuts -->
+
+
+<!-- chrome shortcuts  -->
+  <span class="noShow" id="shortcut5">Alt + K</span>
+  <span class="noShow" id="shortcut6">Alt + Windows + C</span>
+  <span class="noShow" id="shortcut7">Alt + T</span>
+  <span class="noShow" id="shortcut8">Alt + N</span>
+<!-- end chrome shortcuts -->
+
 
 
 </div>
